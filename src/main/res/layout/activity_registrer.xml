@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrerActivity"
+    android:background="#747b8f"
+    >
+
+    <ImageView
+        android:id="@+id/R_logo"
+        android:layout_width="153dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img_login" />
+
+    <TextView
+        android:id="@+id/R_T_nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/R_logo"
+        android:text="Entrez Votre NOM etudiant:"
+        android:textSize="20dp"
+        android:textColor="#FFF"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/R_T_nom"
+        android:hint="Entrez Votre NOM:"
+        android:textSize="20dp"
+        android:inputType="text"
+        android:textColor="#FFF"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/R_T_prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nom"
+        android:text="Entrez Votre PRENOM:"
+        android:textSize="20dp"
+        android:textColor="#FFF"
+        />
+
+    <EditText
+        android:id="@+id/R_E_prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/R_T_prenom"
+        android:hint="Entrez Votre PRENOM:"
+        android:textSize="20dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="#FFF"
+        />
+
+        <TextView
+            android:id="@+id/R_T_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/R_E_prenom"
+            android:text="Entrez Votre password:"
+            android:textSize="20dp"
+            android:textColor="#FFF"
+            />
+
+    <EditText
+        android:id="@+id/R_E_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/R_T_password"
+        android:hint="Entrez Votre password:"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:textColor="#FFF"
+        android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/R_T_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/R_E_password"
+            android:text="Entrez Votre email:"
+            android:textSize="20dp"
+            android:textColor="#FFF"
+            />
+
+        <EditText
+            android:id="@+id/R_E_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/R_T_email"
+            android:hint="Entrez Votre email:"
+            android:textSize="20dp"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="#FFF"
+            />
+    <EditText
+        android:id="@+id/R_E_dep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/R_E_email"
+        android:hint="Entrez Votre departement:"
+        android:textSize="20dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="#FFF"
+        />
+
+    <Button
+        android:id="@+id/btnRegistrer"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="#218c21"
+        android:layout_below="@id/R_E_dep"
+        android:layout_centerHorizontal="true"
+        android:onClick="Register"
+        />
+</RelativeLayout>
